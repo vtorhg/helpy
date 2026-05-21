@@ -1,4 +1,3 @@
-/* Reset básico e centralização */
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +10,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #0b5e28; /* Fundo verde do Helpy */
+    background-color: #0b5e28; 
     padding: 20px;
 }
 
-/* Container Principal do Formulário */
 .helpy-container {
-    background-color: #cccccc; /* Fundo cinza claro */
+    background-color: #cccccc; 
     width: 100%;
     max-width: 750px;
     padding: 40px;
@@ -32,7 +30,6 @@ body {
     font-weight: bold;
 }
 
-/* Linha com os dois campos superiores */
 .form-row {
     display: flex;
     gap: 20px;
@@ -44,7 +41,6 @@ body {
     position: relative;
 }
 
-/* Estilização dos Inputs e Textarea */
 input[type="text"], textarea {
     width: 100%;
     padding: 15px;
@@ -55,7 +51,6 @@ input[type="text"], textarea {
     outline: none;
 }
 
-/* Customização do Dropdown de Múltipla Escolha */
 .select-box {
     background-color: #ffffff;
     padding: 15px;
@@ -91,7 +86,6 @@ input[type="text"], textarea {
     padding: 10px;
 }
 
-/* Classe dinâmica ativada pelo JS */
 .checkbox-options.show {
     display: block;
 }
@@ -111,16 +105,14 @@ input[type="text"], textarea {
     background-color: #f0f0f0;
 }
 
-/* Textarea de descrição */
 textarea {
     height: 180px;
     resize: none;
     margin-bottom: 25px;
 }
 
-/* Botão Enviar Solicitação */
 .btn-submit {
-    background-color: #064016; /* Verde escuro */
+    background-color: #064016; 
     color: #ffffff;
     border: none;
     padding: 12px 24px;
