@@ -1,88 +1,136 @@
-*,::after,
-::before {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+/* Reset básico e centralização */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    background: linear-gradient(-120deg,
-     #00560c, lab(17.6% -25.02 23.8));
-}
-
-body, textarea{font-family: sans-serif;
-}
-
-.container{
-    display:flex;
+body {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: #0b5e28; /* Fundo verde do Helpy */
+    padding: 20px;
 }
 
-.form_box{
+/* Container Principal do Formulário */
+.helpy-container {
+    background-color: #cccccc; /* Fundo cinza claro */
+    width: 100%;
+    max-width: 750px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.helpy-container h2 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Linha com os dois campos superiores */
+.form-row {
     display: flex;
-    flex-direction: column;
-    background-color: #ccc;
-    border-radius: 8px;
-    width: 700px;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.form_box .title{
-    padding: 24px 32px;
-    font-size: 24px;
-    border-bottom: thin solid #ccc;
-
-
+.form-group {
+    flex: 1;
+    position: relative;
 }
 
-.form_box form{
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    padding: 32px;
-}
-
-.form_box input,
-.form_box textarea{
-    width: calc(50% - 8px);
-    height: 48px;
-    border-radius: 8px;
-    border: thin solid #999;
-    padding-left: 16px;
-    margin-bottom: 16px;
-    font-size: 16px;
-}
-
-.form_box input:first-child{
-    margin-right: 16px;
-}
-
-.form_box input[name=subject]{
+/* Estilização dos Inputs e Textarea */
+input[type="text"], textarea {
     width: 100%;
-}
-
-.form_box textarea{
-    width: 100%;
-    height: 180px;
-    padding: 16px;
-}
-
-.form_box button{
-    display: block;
+    padding: 15px;
     border: none;
-    outline: none;
-    width: 180px;
-    height: 48px;
     border-radius: 8px;
-    background-color: #004c0b;
-    color: #fff;
+    font-size: 16px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Customização do Dropdown de Múltipla Escolha */
+.select-box {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #757575;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-box::after {
+    content: '▼';
+    font-size: 12px;
+    color: #666;
+}
+
+.checkbox-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-top: 5px;
+    z-index: 10;
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Classe dinâmica ativada pelo JS */
+.checkbox-options.show {
+    display: block;
+}
+
+.checkbox-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    border-radius: 4px;
+}
+
+.checkbox-options label:hover {
+    background-color: #f0f0f0;
+}
+
+/* Textarea de descrição */
+textarea {
+    height: 180px;
+    resize: none;
+    margin-bottom: 25px;
+}
+
+/* Botão Enviar Solicitação */
+.btn-submit {
+    background-color: #064016; /* Verde escuro */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
     font-size: 16px;
     font-weight: bold;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-.form_box button:hover{
-    background-color: #046606;
+.btn-submit:hover {
+    background-color: #042d10;
 }
