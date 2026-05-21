@@ -1,0 +1,104 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centralização com o fundo verde idêntico ao do Helpy */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0b5e28;
+    padding: 20px;
+}
+
+/* Container do formulário em cinza claro */
+.login-container {
+    background-color: #cccccc;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Título em preto destacado */
+.login-container h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Grupos de entrada (Labels e Inputs) */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: #333333;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Inputs brancos idênticos aos da imagem anterior */
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Efeito sutil ao focar no campo */
+.input-group input:focus {
+    box-shadow: 0 0 0 2px #064016;
+}
+
+/* Botão de envio em verde escuro do Helpy */
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #064016;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+/* Efeito hover escurecido para o botão */
+.btn-login:hover {
+    background-color: #042d10;
+}
+
+/* Links adicionais */
+.extra-links {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.extra-links a {
+    color: #064016;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+    color: #042d10;
+}

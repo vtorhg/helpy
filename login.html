@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <!-- Conexão com o arquivo de estilização externa -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Entrar</h2>
+        
+        <form action="#" method="POST">
+            <!-- Campo de E-mail -->
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu@email.com" required>
+            </div>
+
+            <!-- Campo de Senha -->
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Sua senha" required>
+            </div>
+
+            <!-- Botão Entrar -->
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+
+        <!-- Links Auxiliares -->
+        <div class="extra-links">
+            <p><a href="#">Esqueceu sua senha?</a></p>
+            <p style="margin-top: 10px;">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </div>
+    </div>
+
+    <!-- Conexão com o arquivo de lógica externa -->
+    <script src="login.js"></script>
+</body>
+</html>
+
